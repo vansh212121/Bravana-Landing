@@ -19,7 +19,7 @@ const HeroSection = () => {
           />
           <div className="absolute inset-0 z-10 bg-linear-to-t from-black/50 via-black/20 to-transparent"></div>
 
-          <div className="absolute right-6 top-6 sm:right-10 sm:top-10 md:right-12 md:top-28 z-20 flex max-w-[300px] md:max-w-[380px] flex-col items-start gap-5">
+          <div className="absolute right-6 top-6 sm:right-10 sm:top-10 md:right-12 md:top-28 z-20 flex max-w-[300px] md:max-w-[420px] flex-col items-start gap-5">
             <p className="text-left text-[16px] md:text-[18px] leading-normal text-white font-sans font-normal tracking-wide">
               Bravana helps you showcase your work with clarity and confidence,
               built for studios ready to stand out and win trust.

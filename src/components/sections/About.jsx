@@ -36,7 +36,7 @@ const AboutSection = () => {
           <div className="relative w-full aspect-video rounded-4xl overflow-hidden group cursor-pointer shadow-sm mb-6">
             <div className="absolute inset-0 bg-black flex items-center justify-center">
               <img
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2864&auto=format&fit=crop"
+                src="/assets/about.webp"
                 alt="Video Thumbnail"
                 className="absolute inset-0 w-full h-full object-cover opacity-80"
               />
@@ -57,7 +57,7 @@ const AboutSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-gray-200">
               {/* Stat 1 */}
               <div className="flex flex-col items-center justify-center px-4 pt-4 md:pt-0">
-                <p className="text-4xl md:text-5xl font-bold text-black mb-2">
+                <p className="text-4xl md:text-6xl font-medium text-black mb-2">
                   300+
                 </p>
                 <p className="text-sm md:text-base text-secondary font-medium">
@@ -66,7 +66,7 @@ const AboutSection = () => {
               </div>
               {/* Stat 2 */}
               <div className="flex flex-col items-center justify-center px-4 pt-8 md:pt-0">
-                <p className="text-4xl md:text-5xl font-bold text-black mb-2">
+                <p className="text-4xl md:text-6xl font-medium text-black mb-2">
                   100%
                 </p>
                 <p className="text-sm md:text-base text-secondary font-medium">
@@ -75,7 +75,7 @@ const AboutSection = () => {
               </div>
               {/* Stat 3 */}
               <div className="flex flex-col items-center justify-center px-4 pt-8 md:pt-0">
-                <p className="text-4xl md:text-5xl font-bold text-black mb-2">
+                <p className="text-4xl md:text-6xl font-medium text-black mb-2">
                   30+
                 </p>
                 <p className="text-sm md:text-base text-secondary font-medium">

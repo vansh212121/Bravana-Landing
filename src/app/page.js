@@ -1,4 +1,5 @@
 import AboutSection from '@/components/sections/About'
+import FeaturedWork from '@/components/sections/FeaturedWork'
 import HeroSection from '@/components/sections/Hero'
 import Navigation from '@/components/sections/Navigation'
 import WhyChooseUs from '@/components/sections/WhyChooseUs'
@@ -11,6 +12,7 @@ const page = () => {
       <HeroSection />
       <WhyChooseUs />
       <AboutSection />
+      <FeaturedWork />
     </section>
 
 
