@@ -42,7 +42,7 @@ export default function Navigation() {
       <div className="relative mx-auto flex h-18 items-center justify-between max-w-[1440px]">
         <a
           href="/"
-          className="text-primary font-semibold text-[24px] hover:text-secondary transition-colors"
+          className="text-primary font-medium text-[24px] hover:text-secondary transition-colors"
         >
           Bravana<sup className="text-[14px]">®</sup>
         </a>

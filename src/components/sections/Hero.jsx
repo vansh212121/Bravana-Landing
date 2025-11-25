@@ -1,11 +1,12 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { TalkButton } from "../ui/AnimatedButton";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="bg-white pt-10">
+    <section id="hero" className="bg-[#f5f5f5] pt-10">
       <div className="px-5 md:px-10 py-5 md:py-10">
         <div className="relative mx-auto flex h-[calc(100vh-140px)] md:h-[calc(100vh-100px)] max-w-[1540px] flex-col justify-end overflow-hidden rounded-4xl">
           <Image

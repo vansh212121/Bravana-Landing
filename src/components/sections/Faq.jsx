@@ -49,7 +49,7 @@ const AccordionItem = React.forwardRef(({ className, ...props }, ref) => (
   <AccordionPrimitive.Item
     ref={ref}
     className={cn(
-      "bg-white rounded-[20px] overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300",
+      "bg-white rounded-[20px] overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.04)] ",
       className
     )}
     {...props}
@@ -63,15 +63,15 @@ const AccordionTrigger = React.forwardRef(
       <AccordionPrimitive.Trigger
         ref={ref}
         className={cn(
-          "group flex flex-1 items-center justify-between p-6 md:p-7 text-left text-[17px] md:text-[18px] font-semibold text-black transition-all hover:no-underline",
+          "group flex flex-1 items-center justify-between p-6 md:p-7 text-left text-[17px] md:text-[18px] font-semibold text-primar",
           className
         )}
         {...props}
       >
         {children}
-        <div className="bg-[#f5f5f5] rounded-full w-9 h-9 flex items-center justify-center shrink-0 ml-4 transition-colors group-hover:bg-[#e5e5e5]">
+        <div className="rounded-full w-9 h-1 flex items-center justify-center shrink-0 ml-4 ">
           <Plus
-            className="h-4 w-4 text-black transition-transform duration-300 group-data-[state=open]:rotate-45"
+            className="h-6 w-6 text-primary transition-transform duration-300 group-data-[state=open]:rotate-45"
             strokeWidth={2.5}
           />
         </div>
@@ -101,29 +101,36 @@ export default function FaqSection() {
     <section className="bg-[#f7f7f7] py-20 md:py-28 lg:py-32">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-          <div className="flex flex-1 flex-col items-start gap-5 lg:max-w-[400px]">
-            <p className="font-semibold uppercase tracking-widest text-red-600 text-[13px]">
+          {/* Heading Left */}
+          <div className="flex flex-1 flex-col items-start gap-3 lg:max-w-[400px]">
+            <p className="font-medium text-red-1 text-[16px] uppercase font-sans">
               FAQs
             </p>
-            <h2 className="font-bold text-black text-[40px] md:text-[48px] leading-[1.15]">
+            <h2 className="text-[40px] md:text-[48px] font-semibold leading-[1.1] tracking-tight text-primary">
               Have questions?
             </h2>
-            <p className="text-[#757575] text-[17px] md:text-[18px] leading-[1.6]">
+            <p className="text-[17px] md:text-[18px] text-secondary leading-[1.1] tracking-tight">
               Here are some quick answers to the most common questions about our
               services, pricing, and how we work.
             </p>
           </div>
+
+          {/* Right Faq */}
           <div className="flex-1">
             <Accordion
               type="single"
               collapsible
-              className="flex w-full flex-col gap-4"
+              className="flex w-full flex-col gap-4 px-8"
             >
               {faqData.map((item) => (
-                <AccordionItem key={item.value} value={item.value}>
+                <AccordionItem
+                  key={item.value}
+                  value={item.value}
+                  className="p-1"
+                >
                   <AccordionTrigger>{item.question}</AccordionTrigger>
-                  <AccordionContent>
-                    <p className="text-[#757575] leading-[1.65]">
+                  <AccordionContent className="bg-gray-100 rounded-[20px] p-4">
+                    <p className="text-secondary leading-[1.35] text-[18px] tracking-tight">
                       {item.answer}
                     </p>
                   </AccordionContent>

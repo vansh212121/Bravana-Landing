@@ -71,9 +71,41 @@ const TestimonialsSection = () => {
           </p>
           <h2 className="text-[40px] md:text-[48px] font-semibold leading-[1.1] text-primary">
             Kind words from{" "}
-            <span className="inline-block translate-y-1 text-[36px] md:text-[44px]">
-              🥰
-            </span>{" "}
+            <div className="inline-block translate-y-1 -rotate-6 bg-red-2 rounded-2xl p-1 shadow shadow-black/50">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 64 64"
+                role="img"
+                aria-label="Smiley face"
+              >
+                {/* Outer soft circle */}
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="28"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="3.2"
+                  strokeOpacity="0.35"
+                />
+
+                {/* Eyes */}
+                <circle cx="22" cy="26" r="4" fill="white" />
+                <circle cx="42" cy="26" r="4" fill="white" />
+
+                {/* Smile */}
+                <path
+                  d="M18 38 C26 50, 38 50, 46 38"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>{" "}
             clients
           </h2>
           <p className="mt-4 text-[17px] md:text-[18px] text-secondary leading-[1.1] tracking-tight px-20">
